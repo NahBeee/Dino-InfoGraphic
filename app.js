@@ -1,8 +1,4 @@
-    /**
-    * @description Represents a dinosaur constructor
-    * @constructor
-    * @param {Object} data - The data of Dino
-    */
+
     // Create Dino Constructor
 function DinoConstr(data){
     this.species = data.species;
@@ -13,10 +9,7 @@ function DinoConstr(data){
     this.when = data.when;
     this.fact = data.fact;
 }
-    /**
-    * @description Creates the dinosaur object array by calling constructor
-    * @returns {Array} Array of dinosaur objects from constructor
-    */
+
     // Create Dino Objects
 let dino= [];
 fetch('/dino.json')
@@ -25,10 +18,7 @@ fetch('/dino.json')
         dino = json.Dinos.map(dino => new DinoConstr(dino)) ) 
         // iterate over each elements. for each data from dino, a new instance of Dino Constructor is created 
         // and added to to dino array 
-    /**
-    * @description Creates the human object
-    * @returns {Object} Human objects
-    */
+
     // Create Human Object
 function Human(name,weight,height,diet){
     this.name =name;
